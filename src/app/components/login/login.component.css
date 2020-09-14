@@ -1,0 +1,12 @@
+.mat-toolbar-row, .mat-toolbar-single-row {
+    padding: 3.5rem;
+    opacity: 0.5;
+}
+section{
+    background: url('../../../assets/3411355.jpg') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.form{background:#ffffffa3;border-radius: 5px;padding: 2rem;}
+input {font-size: 0.8rem;}
+p{color:#fff;}

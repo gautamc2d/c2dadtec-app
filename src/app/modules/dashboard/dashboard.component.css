@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+  }
+th.mat-sort-header-sorted {
+  color: black;
+}
+.searchbar {
+	position: absolute;
+	top: 1em;
+  max-width:20%;
+	right: 10rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

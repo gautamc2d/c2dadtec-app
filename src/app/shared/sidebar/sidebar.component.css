@@ -1,0 +1,19 @@
+mat-toolbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+}
+ul {
+	padding: 0;
+}
+li {
+    display: block;
+    color: #fff;
+    padding: 1rem 3rem;
+    transition: all 0.4s ease;
+}
+li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}

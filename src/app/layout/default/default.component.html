@@ -1,0 +1,17 @@
+<mat-drawer-container>
+
+            <!-- <mat-drawer mode="side" opened #sidenav> -->
+            <mat-drawer mode="side" [(opened)]="toggle" >
+                <app-sidebar></app-sidebar>
+            </mat-drawer>
+
+            <mat-drawer-content >
+                <!-- <button mat-icon-button>
+                    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+                </button> -->
+                <app-header  (toggleEvent)="receiveToogle($event)"></app-header>
+                <router-outlet></router-outlet>
+            </mat-drawer-content>
+
+
+</mat-drawer-container>

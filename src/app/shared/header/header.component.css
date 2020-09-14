@@ -1,0 +1,17 @@
+.spacer {
+    flex: 1 1 auto;
+}
+.mat-focus-indicator.mat-icon-button.mat-button-base {
+    position: relative;
+    left: -1.6rem;
+    outline: none;
+}
+mat-toolbar{background: inherit;}
+button:nth-child(4), button:nth-child(5) {
+    background: #536dfe;
+    color: #fff;
+    margin: 0.5rem;
+}
+button:nth-child(5) {
+    bottom: 0.7rem;
+}
