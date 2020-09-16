@@ -8,12 +8,14 @@ import { MaterialModule } from './material/material.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './components/login/login.component';
 import { DefaultModule } from './layout/default/default.module';
+import { LocationListingComponent } from './modules/location-listing/location-listing.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    LocationListingComponent
   ],
   imports: [
     BrowserModule,

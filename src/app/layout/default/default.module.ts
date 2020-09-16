@@ -7,6 +7,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTableModule} from '@angular/material/table'; 
 import {MatSortModule} from '@angular/material/sort'; 
 import {MatPaginatorModule} from '@angular/material/paginator'; 
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatSidenavModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatButtonModule,
+    MatIconModule
   ]
 })
 export class DefaultModule { }
