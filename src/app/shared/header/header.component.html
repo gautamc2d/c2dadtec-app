@@ -9,10 +9,15 @@
     <button mat-icon-button>
       <mat-icon>notifications_none</mat-icon>
     </button>
-    <button mat-icon-button>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
      <mat-icon>person_outline</mat-icon>
-   </button>
+    </button>
   </mat-toolbar>
 </p>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    User <mat-icon class="ml-3">login</mat-icon>
+  </button>
+ </mat-menu>
   
   

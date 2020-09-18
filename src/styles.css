@@ -9,3 +9,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background:
 th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 	color: #000;
 }
+a, a:hover{color:#fff;text-decoration: none;}
+mat-form-field{width: 20rem;padding-left: 3.5rem;padding-right: 1rem;}
+.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button, .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button {
+	margin-top: -6px;
+	margin-bottom: -6px;
+}
+button{outline: none !important;}
+.drawer-content{background: #fff;height: 100%;margin-top: -13px;padding: 3rem 0px;}

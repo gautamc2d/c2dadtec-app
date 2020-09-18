@@ -1,0 +1,6 @@
+.mx-auto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mx-auto button:nth-child(1){margin-right: 0.5rem;}

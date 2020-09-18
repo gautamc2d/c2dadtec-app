@@ -1,0 +1,46 @@
+<form class="example-form drawer-content">
+    <div class="row">
+        <div class="col-3 mt-3">          
+            <mat-form-field appearance="outline">
+                <mat-label>Report Name</mat-label>
+                <mat-select required>
+                    <mat-option value="voltage">Voltage</mat-option>
+                    <mat-option value="temperature">Temperature</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-3 mt-3">          
+            <mat-form-field appearance="outline">
+                <mat-label>Location</mat-label>
+                <mat-select required>
+                    <mat-option value="OfficeFloor_1">OfficeFloor_1</mat-option>
+                    <mat-option value="OfficeFloor_1">OfficeFloor_2</mat-option>
+                    <mat-option value="OfficeFloor_1">Building_2</mat-option>
+                    <mat-option value="OfficeFloor_1">OfficeFloor_3</mat-option>
+                    <mat-option value="OfficeFloor_1">OfficeFloor_4</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-2 mt-3 datewidth">
+            <mat-form-field appearance="outline">
+                <mat-label>From</mat-label>
+                <input matInput [matDatepicker]="from" required placeholder="DD-MM-YYYY">
+                <mat-datepicker-toggle matSuffix [for]="from"></mat-datepicker-toggle>
+                <mat-datepicker #from></mat-datepicker>
+            </mat-form-field>              
+        </div>
+        <div class="col-2 mt-3 datewidth">
+            <mat-form-field appearance="outline">
+                <mat-label>To</mat-label>
+                <input matInput [matDatepicker]="to" required placeholder="DD-MM-YYYY">
+                <mat-datepicker-toggle matSuffix [for]="to"></mat-datepicker-toggle>
+                <mat-datepicker #to></mat-datepicker>
+            </mat-form-field>              
+        </div>
+        <div class="offset-1 col-1 mt-3 float-right">
+            <button mat-mini-fab color="primary">
+                <mat-icon>east</mat-icon>
+            </button>
+        </div>
+    </div>
+</form>

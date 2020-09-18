@@ -4,6 +4,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import {MatToolbarModule} from '@angular/material/toolbar'; 
 import {MatButtonModule} from '@angular/material/button'; 
 import {MatIconModule} from '@angular/material/icon'; 
+import {MatMenuModule} from '@angular/material/menu'; 
+
 
 @NgModule({
   declarations: [
@@ -13,7 +15,8 @@ import {MatIconModule} from '@angular/material/icon';
   imports: [
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatMenuModule
   ],
   exports: [
     HeaderComponent,

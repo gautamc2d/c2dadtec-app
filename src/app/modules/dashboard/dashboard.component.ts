@@ -3,6 +3,8 @@ import { MatSort } from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import {MatPaginator} from '@angular/material/paginator';
 import { PageTitleService } from '../../services/PageTitle/page-title.service';
+import { MatDialog } from '@angular/material/dialog';
+import { DeleteListingComponent } from 'src/app/dialogs/delete-listing/delete-listing.component';
 
 export interface PeriodicElement {
   locationName: string;
@@ -27,7 +29,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class DashboardComponent implements OnInit, AfterViewInit {
 
   
-  constructor(private data: PageTitleService) { }
+  constructor(private data: PageTitleService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.data.changeTitle("Location Listing");
@@ -51,4 +53,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
     this.dataSource.paginator = this.paginator;
   }
   
+  openDialog(){
+    this.dialog.open(DeleteListingComponent);
+  }
 }

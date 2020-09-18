@@ -12,4 +12,12 @@ th.mat-sort-header-sorted {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+<<<<<<< Updated upstream
 }
+=======
+}
+.mat-icon-button {
+	width: auto;}
+a{color:rgb(0, 195, 255);}
+button{color:#444;outline: none;}
+>>>>>>> Stashed changes
